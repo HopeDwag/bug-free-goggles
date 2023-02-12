@@ -12,5 +12,6 @@ permalink: /URL-PATH
   <body>
     <h1>Welcome to My First GitHub Pages Website!</h1>
     <p>This is a simple HTML file that you can use as the basis for your first GitHub Pages website.</p>
+    <h2>This is a great page!</h2>
   </body>
 </html>
