@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1447799073950617"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1447799073950617"
      crossorigin="anonymous"></script>
     <title>Cowsay Guess the Number Game</title>
     <style>
@@ -28,7 +28,7 @@
         </label>
         <button type="button" id="guessButton">Guess</button>
       </form>
-      <div class="cowsay" id="cowsayOutput"></div>
+      <pre class="cowsay" id="cowsayOutput"></pre>
     </div>
 
     <script>
@@ -43,10 +43,10 @@
         const guess = parseInt(guessInput.value);
 
         if (guess === targetNumber) {
-          cowsayOutput.innerHTML = `
- ___________\n
-< You won! >\n
- -----------\n
+          cowsayOutput.textContent = `
+ ___________
+< You won! >
+ -----------
         \\   ^__^
          \\  (oo)\\_______
             (__)\\       )\\/\\
@@ -54,10 +54,10 @@
                 ||     ||
           `;
         } else if (guess < targetNumber) {
-          cowsayOutput.innerHTML = `
- _________\n
-< Too low >\n
- ---------\n
+          cowsayOutput.textContent = `
+ _________
+< Too low >
+ ---------
         \\   ^__^
          \\  (oo)\\_______
             (__)\\       )\\/\\
@@ -65,10 +65,10 @@
                 ||     ||
           `;
         } else {
-          cowsayOutput.innerHTML = `
- ________\n
-< Too high >\n
- ---------\n
+          cowsayOutput.textContent = `
+ ________
+< Too high >
+ --------
         \\   ^__^
          \\  (oo)\\_______
             (__)\\       )\\/\\
@@ -80,6 +80,3 @@
     </script>
   </body>
 </html>
-
-
-
